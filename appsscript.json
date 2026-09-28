@@ -1,0 +1,31 @@
+{
+  "timeZone": "UTC",
+  "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/documents.currentonly",
+    "https://www.googleapis.com/auth/script.external_request"
+  ],
+  "addOns": {
+    "common": {
+      "name": "SEOSiri Workspace Security Shield",
+      "logoUrl": "https://developers.seosiri.com/favicon.svg",
+      "homepageTrigger": {
+        "runFunction": "onHomepage"
+      }
+    },
+    "gmail": {
+      "contextualTriggers": [{
+        "unconditional": {},
+        "onTriggerFunction": "onGmailCompose"
+      }]
+    },
+    "docs": {
+      "onFileScopeSelectedTrigger": {
+        "runFunction": "onDocsOpen"
+      }
+    }
+  }
+}

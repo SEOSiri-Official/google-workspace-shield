@@ -1,0 +1,21 @@
+{
+  "name": "@seosiri/google-workspace-shield",
+  "version": "1.0.0",
+  "description": "Enterprise Zero-Trust AI Security Firewall and Real-Time PII/PHI Redaction Add-on for Google Workspace (Gmail, Docs, Sheets).",
+  "main": "dist/backend/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "deploy:worker": "npx wrangler deploy"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260702.1",
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  }
+}

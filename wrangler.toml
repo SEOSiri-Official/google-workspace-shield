@@ -1,0 +1,11 @@
+name = "seosiri-google-workspace-shield"
+main = "src/backend/index.ts"
+compatibility_date = "2026-09-28"
+workers_dev = true
+
+routes = [
+  { pattern = "shield.seosiri.com", custom_domain = true }
+]
+
+[vars]
+MASTER_SECRET = "seosiri_master_mcp_secret_key_2026_x99"
